@@ -1,0 +1,131 @@
+body{
+    background: url("car.jpg");
+    background-repeat:no-repeat ;
+    background-position-x: 50%;
+    background-position-y: 60%;
+    height: 700px;
+    background-size: cover;
+    font-family: 'Reggae One', cursive;
+    display: block;
+    margin: auto;
+    background-color: rgba(0, 0, 0);
+}
+header{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+}
+ul{
+    list-style: none;
+    padding-inline-start: 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+li{
+    display: inline;
+}
+a{
+    text-decoration: none;
+    background-color:rgb(0,0,0);
+    border-radius: 5px;
+    padding: 7px 7px 7px 7px;
+    margin: 10px;
+    color: rgb(0, 247, 255);
+    font-size: 15px;
+    border: 2px solid rgb(0, 247, 255);
+}
+a:hover{
+    background-color: rgba(200, 200, 200, 0.2);
+    font-weight: bold;
+}
+.car{
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 100px;
+    text-align: center;
+    text-shadow:5px 5px rgba(0,255,255,0.5);
+}
+.content{
+    display: flex;
+    justify-content: center;
+}
+h2{
+    color: black;
+    font-size: 60px;
+}
+.elements{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+p{
+    text-align: center;
+}
+#head,#head2{
+    text-align: center;
+}
+.lambo, .ferrari, .mercedes,.rolls,.bugatti{
+    width: 320px;
+    display:block;
+    margin: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+}
+.lambo:hover,.ferrari:hover,.mercedes:hover,.rolls:hover,.bugatti:hover{
+    background-color: rgba(255, 255, 255, 0.29);
+    box-shadow:0px 0px 15px 15px rgba(0,255,255,0.7);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+#img1,#img2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img1,.img2{
+    display: block;
+    height:200px;
+    width: 280px;
+    margin: 10px;
+    border-radius: 5px;
+}
+.text{
+    padding: 20px;
+}
+@media screen and (max-width:700px){
+    h1{
+        font-size: 50px;
+    }
+    h2{
+        font-size: 40px;
+    }
+    a{
+        margin: 4px;
+    }
+}
+@media screen and (max-width:350px){
+    .lambo, .ferrari, .mercedes,.rolls,.bugatti{
+        width: 270px;
+    }
+    .img1,.img2{
+        height: 150px;
+        width:200px;
+    }
+    .text{
+        padding:5px;
+    }
+    p{
+        margin: 2px;
+        text-align: center;
+    }
+}
+
